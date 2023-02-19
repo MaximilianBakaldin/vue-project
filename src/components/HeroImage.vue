@@ -30,7 +30,4 @@
         height: 100%;
         background-position: center;
     }
-
-    /* inputValid() gör att den returnerar true om textrutan har något värde. sen bindar du din disabled attribut med !inputValid vilket kommer vara falskt om inputValue är true. den här ```!!this.inputValue``` göra bara om värdet till ett boolean värde. ett utropstecken visar motsatsen (t.ex. om det är true visar den false) och två ger gör samma sak fast igen (alltså visar true om den är true)  */
-
 </style>

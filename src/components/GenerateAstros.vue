@@ -1,6 +1,4 @@
-<script setup>
-    import HelloHi from '../components/HelloHi.vue'
-</script>
+<script setup></script>
 
 <template>
     <div class="input">
@@ -8,7 +6,6 @@
             Click the button to generate astronauts!
         </h1>
         <button type="button" class="btn" @click="fetchApi">Search</button>
-        <HelloHi name="Richard" />
 
         <ul>
             <li v-for="astronaut in astronauts">
@@ -53,7 +50,7 @@
     }
 
     .text {
-        margin-top: -90vh;
+        margin-top: -100vh;
         margin-left: 32vw;
         color: aqua;
     }

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <div class="input" style="position: absolute; z-index: 100">
+    <div class="input" style="position: absolute; z-index: 200">
         <h2 class="text">Search for a specific astronaut!</h2>
         <input class="input-text" type="text" v-model="search" />
         <button type="button" class="btn" @click="fetchApi">Search</button>
@@ -14,7 +14,7 @@
                             .includes(search.toLowerCase())
                     "
                 >
-                    <!-- kopierad kod från chatGPT angående hur man gör så att texten i sökrutan inte blir case sensitive -->
+                    <!-- kopierad kod från chatGPT (.toLowerCase().includes(search.toLowerCase())) angående hur man gör så att texten i sökrutan inte blir case sensitive -->
                     <p class="result">Name: {{ astronaut.name }}</p>
                     <p class="result">Age: {{ astronaut.age }}</p>
                     <p class="result">Biography: {{ astronaut.bio }}</p>
